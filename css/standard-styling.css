@@ -7,8 +7,8 @@
 }
 html{
   margin:30px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-top: 10px;
   font-style: sans-serif;
   font-weight:normal;
@@ -17,11 +17,13 @@ html{
   line-height: 30px;
   margin-top: 69px;
   font-size: 16px;
+  color:rgb(204, 0, 0)
 }
 .subtitle{
   font-size: 30px;
   line-height: 30px;
   font-size-adjust: 100;
+  color:rgb(0, 24, 92)
 }
 .maintext{
   font-size:19px;
