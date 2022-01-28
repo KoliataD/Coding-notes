@@ -24,6 +24,12 @@
           <li>Text Elements</li>
           <li>Linking elements</li>
         </ul>
+      <li><a href="#html-properties&values">Html Properties, and values.</a></li>
+        <ul>
+          <li>Webpage Properties, and Values</li>
+          <li>Text Properties, and Values</li>
+          <li>Link Properties, and Values</li>
+        </ul>
       <li><a href="#html-webpage-setup">Html Webpage Setup</a></li>
         <ul>
           <li>Creating a project for Html</li>
@@ -53,10 +59,62 @@
     <p class="maintext">Webpage Elements notes</p>
 
     <h1 class="subtitle">Text elements</h1>
-    <p class="maintext">Text Elements notes</p>
+    <p class="maintext">&lt;h1&gt;<br>This is a header element
+      <br><br>&lt;p&gt;<br>This is a paragraph element
+      <br>
+    </p>
+    
 
     <h1 class="subtitle">Linking Elements</h1>
-    <p class="maintext">Linking elements notes</p>
+    <p class="maintext">Linking elements can link different files to a page.
+      <br><br>&lt;img&gt;
+      <br>This will create a image on your webpage. This tag requires a value for src, and optionally alt. Src will be the image adress, and alt will be alternative text.
+      <br><br> it will look something like this:
+    </p>
+
+    <div class="examplebox">
+      <p class="maintext">&lt;img src="img/image.jpeg" alt="this is a image"&gt; </p>
+    </div>
+    
+    <p class="maintext">
+      &lt;a&gt;
+      <br>This is a anchor element.This can add a link to text within it. This tag requires a value for href(hyperlinkreference). The value you will give href is the link to where you want it to go. When referencing within a page and not to an external link or internal file you will link it to an id with a # infront of it.
+      <br><br>it will look something like this:
+    </p>
+
+    <div class="examplebox">
+      <p class="maintext">&lt;a href="whateveryourlinkis#this-goes-to-a-internal-id>this is the text it will be linked to&lt;/a&gt;</p>
+    </div>
+  </div>
+
+  <div class="title">
+    <h1 id="html-properties&values">Html Properties, and Values</h1>
+  </div>
+
+  <div class="textbox">
+    <h1 class="subtitle">Webpage Properties, and Values</h1>
+    <p class="maintext">Webpage Properties, and Values</p>
+
+    <h1 class="subtitle">Text Properties, and Values</h1>
+    <p class="maintext">
+      id
+      <br> This property can be given to something to allow it to be referenced. You can take the id you give something, and put it into a hypertext reference
+      <br><br>it will look something like This
+    </p>
+
+    <div class="examplebox">
+      <p class="maintext">&lt;h1 id="our-id"&gt;random text&lt;/h1&gt;
+        <br>&lt;a href="#our-id"&gt;The text that will be the link&lt;/a&gt;
+      </p>
+    </div>
+
+    <p class="maintext">
+      <br><br>class
+      <br>this can be added to text or text groups in divisions or spans to make rules or effect large groups of text within the same class. Typically this is used for css styling.
+    </p>
+
+    <h1 class="subtitle">Link Properties, and Values</h1>
+    <p class="maintext">Link Properties, and Values notes</p>
   </div>
 
   <div class="title">
@@ -68,7 +126,7 @@
     <p class="maintext">Creating a project for Html notes</p>
 
     <h1 class="subtitle">Foundation for Html</h1>
-    <p class="maintext">Foundation for Html notes</p>
+    <p class="maintext"> In html to write a comment you write&lt;--this is a comment--></p>
   </div>
 </body>
 </html>
