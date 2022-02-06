@@ -28,7 +28,49 @@
 
   <div class="textbox">
     <h1 class="subtitle">Standard Terminal Commands</h1>
-    <p class="maintext">Standard Terminal Commands notes</p>
+    <p class="maintext">
+      We first need to navigate to our terminal before we are able to run any commands. The way I like to do this is by using GitHub becuase its GUI Graphical User interface is more intuitive, and is what we will use to save our code. To access it without GitHub on mac you can just search up terminal, and on windows you can search up cmd.
+      <br>
+      <br>$pwd
+      <br>This command will show you where you are in your computer. Typically this includes which user you are. Before and after all codes it will also show you this information as well as your computer ip location, and user.  "~" This squigly line refers to our home directory.
+      <br>
+      <br>$cd
+      <br>This command will navigate us through our terminal into different directores. To use this command we must fully describe all of the directories we wish to go threw so if we want to go to coding-notes.html this is what it will look like. When moving threw directories a dot . stands for the directory you are in, and 2 dots .. will navigate you up a directory. You can type in slashes between these to create a path. ../../..
+    <div class="examplebox"><p class="maintext">$cd ~/desktop/coding-notes.html</p></div>
+    </p>
+    <p class="maintext">
+      <br>
+      <br>$mkdir
+      <br>This command will create a directory make sure when you are maing a directory you don't space things out with spaces because it will just create more directories use underscores,  or hyphens.       
+      <br>
+      <br>$ls
+      <br>This command will list all of the files within the directory that you are currently in. Note some of them won't be shown because of dots or because of computer reccomendations which can be changed. You can add -a to make it so that it lists everything even if it is hidden.
+      <br>
+      <br>$touch
+      <br>This command will create a file in the directory that you are currently in. You can create multiple at the same time simply write in the file name you want to create after it. When creating files you want them to be read properly if it is a html file you must type .html css .css, and img img.
+      <br>
+      <br>$mv
+      <br>This command can both move or rename files. To move a file with $mv you can type the file name you want to change in quotes, and than the new name in quotes. To move a file you type in the file you want to move in quotes, and than you type in a path you want it to be sent through after the directory you are currently in.
+      <br>
+      <br>$rm
+      <br>This command can be used to delete a file. If you are deleting a file with things within it or a directory you can type in -rf r stands for reclusively this will make it so that it deletes everything that is within the file, and f just stands for f. So if we type in (don't do this it will destroy your computer) "$rm -rf ~" it will forcefully delete your home directory, and reclusively delete everything within your home directory, which is everything on your computer.
+      <br>
+      <br>$cp
+      <br>This command is used to copy. To use this type in $cp "(the file that you would like to copy") and it will create a copy of that in the directory that you are in. You can also use this to copy text from somewhere.
+      <br>
+      <br>$cat
+      <br>This command will print out all of the contents of a file. To use this just type in the file in name in quotes after $cat "your files name"
+      <br>
+      <br>$exit
+      <br>This command will make you exit your terminal.
+      <br>
+      <br>code .
+      <br>If you type in code . it will open up vs code in the directory that you are currently in so long as you have visual-studio-code. It is very important that when you are creating a repository on GitHub that you are onling giving them access to the directory that you want them to have acess to. You can accidentally give someone access to your entire home directory which is not a great idea especially if you have sensitive information.
+
+    </p>
+    </p>
+    
+    
   </div>
 
   <div class="title">
@@ -37,10 +79,78 @@
 
   <div class="textbox">
     <h1 class="subtitle">Local Github Commands</h1>
-    <p class="maintext">Local Github Commands notes</p>
+    <p class="maintext">
+      The Commands that we are doing for GitHub will be in the GitHub Terminal that is connected to our terminal.
+      <br>
+      <br>flags
+      <br>We can add flags to commands like -a,-f,-r. a will allow us to run lists that include hidden files with dots infront of it. r will make things run reclusively. f will force your command to happen even if it is not reccomended.
+      <br>
+      <br>$git config
+      <br>This command allows us to configure different things about our GitHub terminal, the gui, some automated settings, and some other stuff
+      <br>$git config -global init.defaultbranch main
+      <br>This command will make it so that on our computer or anytime something is hooked up to our account it will use the automatic branch name main. We do this because it is typically set to master, and the word master has some bad history in slavery.
+      <br>
+      <br>$git config color.ui true
+      <br>This will make it so that our GitHub Terminal will have different elements colored to make it easier for us to read.
+      <br>
+      <br>$git config user.name "the name that you go as"
+      <br>This will change the name that is saved on all of your git projects.
+      <br>
+      <br>$git config user.email "your email"
+      <br>This will change the email that is saved on all of your git projects.
+      <br>
+      <br>$git config -global
+      <br>The global part of this code will make it so that it is saved on everything on the computer, and not just the directory that you are in. You only want to use the global code with personal information on your own secure computer.
+      <br>
+      <br>When saving things to GitHub it will save everything in the directory even if you do not want it to be. To prevent things you don't want to be saved from being saved you can create a file linked to git that will tell it what to ignore. To do this create a file called .gitignore_global. After this file is created you can add whatever files you want ignored in here. After this you run the command $git config -global core.excludesfile~/.gitignore_global this will link the file to your github.
+      <br> 
+      <br>
+      <br>$git init
+      <br>This command will start a local GitHub repository for the directory that we are currently in this will allow us to save stuff to both our local repository, and our remote repository if we make one.
+      <br>$git status
+      <br>This command will show us what has been saved, modified, or created.
+      <br>
+      <br>$git add
+      <br>Our files will only be saved to our repository when we add them so every time you want to make a commit you must type $git add (and than every modified or created file).
+      <br>
+      <br>$git commit -m "message"
+      <br>This command will create basically a save of everyhting you have added to your git repository. The -m stands for message and after it is the message that you will write. You always want to make sure you leave a concise message at the end of your commit, it should finish the phrase this will or it will. There are a few typical occurences of when you should create a commit, when you are done for the day you write what you were working on and that WIP which stands for Work In Progress, when adding a new feature or function, or when we are fixing a bug which we should label BUGFIX:and than the bug that we fixed or are fixing. To make sure that our co-contributors get credit for work the put in when we make our commit we don't put the final quotation mark instead we hit enter twice than we write "co-authored-by: Whoever-it-is &lt;theirgithubemail@email.com&gt;"it will look something like This
+      </p>
+        <div class="examplebox"><p class="maintext">
+          $git commit -m "readme
+          <br>>
+          <br>>
+          <br>Co-authored-by: their-name &lt;their-email@email.com&gt;
+          <br>Co-authored-by: their-name &lt;their-email@gmail.com&gt;
+        </p></div>
+      <p class="maintext">
+      <br>$git log
+      <br>This will show us all of the information from all of the commits that we have made within the branch that we are in. We will also be given a code next to each commit that will allow us to return back to that commit. we can add the flag --oneline this will make it so that each commit only takes up one line and it makes it easier to read. After doing this to go back to using the normal terminal we can hit "enter", and "q" at the same time.
+    </p>
+
     
     <h1 class="subtitle">Remote Github Commands</h1>
-    <p class="maintext">Remtoe Github Commands notes</p>
+    <p class="maintext">
+      PAT
+      <br>A PAT, or a Personal Access Token, is used to give people temporary access to your projects. When generated it is a line of code that you can copy, and paste. With this code they will be given whatever access that PAT permits. To create a PAT on GitHub you must go to Menu>Developer settings>Access Tokens There will be a revoke button, and a generate button, try to leave notes, and select the access's you want it to give, as well as the expiration date. When pulling or pushing code you can either just log in or use a PAT. When pushing or pulling it will give you those options, if you select use a PAT you will use your username, and than the PAT as the password. Make sure that on a non-personal computer that you delete your PAT's and make sure that they are not automatically being used, or saved. If you push and pull stuff, and it does not ask you to re-type in your PAT than it has saved it, and it is reusing it.
+      <br>
+      <br>$git remote add (initals we want our repository to have) (the place that we are sending our information)
+      <br>This command will add a name, and a link to the repository we will send our project to.
+      <br>
+      <br>$git remote -v will show us the name our repository has, and the link to the repository that we are sending it to.
+      <br>
+      <br>$git push (our initials for our project) (the branch we are pushing from which is typically main)
+      <br>This will push all of our data for the directory that we are in to the link that we have given our project.
+      <br>
+      <br>$git clone (the link of the project we want to pull)
+      <br>This command will create a copy of a project from the link that we give it. When we do this the nickname for the project will automatically be origin. Only 1 branch can be called origin which is why we typically give our branch our intials. Make sure when you are doing this you are the directory that you wish to be in this command will clone the project into whatever directory you are in when you hit enter.
+      <br>
+      <br>$git remote rm
+      <br>You can use this command to remove sections of your remote repository information. This is also how you change a project from being forked. You simply remove the branch name, this will also delete the link that used to be on it before. After this you can type in the command $git remote add (whatever you want your initials to be) (The Link to wherever you would like to the repository that you would like to send your project.)
+      <br>
+      <br>
+      
+    </p>
   </div>
 </body>
 </html>

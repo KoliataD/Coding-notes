@@ -24,7 +24,8 @@
           <li>Text Elements</li>
           <li>Linking elements</li>
         </ul>
-      <li><a href="#html-properties&values">Html Properties, and values.</a></li>
+      <li><a href="#html-properties&values">Html Properties, and values.</a>
+      </li>
         <ul>
           <li>Webpage Properties, and Values</li>
           <li>Text Properties, and Values</li>
@@ -44,10 +45,30 @@
 
   <div class="textbox">
     <h1 class="subtitle">Html Terminology</h1>
-    <p class="maintext">Html Terminology notes will go here</p>
+    <p class="maintext">
+      &lt;&gt;
+      <br>this is an opening tag
+      <br>
+      <br>&lt;/>
+      <br>this is a closing tag
+      <br>
+      <br>Elements
+      <br>Things that are housed within these tags are elements, or properties. Elements will be the first thing that is written in a tag, it is also its main identifier.
+      <br>
+      <br>Properties
+      <br>You can give properties to your elements within tags this will modify things within that area of code.
+
+    </p>
 
     <h1 class="subtitle">Html Indentation and Spacing</h1>
-    <p class="maintext">Html Indentation, and spacing notes will go here</p>
+    <p class="maintext">
+      When we are creating webpages we want to make sure that we use the same indendation, and spacing conventions throughout. Depending, on who you are working for, or what you are doing, you indentation may change. A great example is our spacing a lot of people use 4 spaces, some people use 2. I am currently using 2 because that is what the coding program epicodus has told me to do.
+      <br>
+      <br>When we have a tag within a tag we indent the tag in the center. This rule sometimes does not apply to &lt;!doctype> or &lt;html> this is because if we indent everything that it will show up way to the left of our page. This is also why a lot of people like to use the double space instead of the quadruple space.
+      <br>
+      <br>Whitespace
+      <br>We want to avoid unnescassary whitespace. It is ok to leave spaces in code to seperate different functions, make code easier to read, and create divisions for easier access. Try not to use more than 1 whitespace.
+    </p>
   </div>
 
   <div class="title">
@@ -56,12 +77,40 @@
 
   <div class="textbox">
     <h1 class="subtitle">Webpage Elements</h1>
-    <p class="maintext">Webpage Elements notes</p>
+    <p class="maintext">Webpage Elements notes
+      &lt;!DOCTYPE html&gt;
+      <br>&lt;html lang="eng-US"&gt;
+      <br>&lt;/html&gt;
+      <br> This will go in all of your Html projects this will tell whatever program you are on what they are reading in this case it is html. The lang="eng-us" will make our webpage more accessible to people, by telling browsers what language our webpage its in we make it easier to translate.
+      <br>
+      <br>&lt;head&gt;
+      <br>&lt;/head&gt;
+      <br>&lt;body&gt;
+      <br>&lt;/body&gt;
+      <br>The head element is what you will house all of your information, and links to your webpage files like if you are linking a css sheet, also for your title. The body is everything that will be showing up onto your page this will contain the sustenance of your webpage. Things that are contained in the head don't actually show up on the webpage it is more like the behind the scenes stuff that you want to effect your webpage like your css link sheet.
+      <br>
+      <br>&lt;title>title&lt;/title>
+      <br>We can put this inside of our head tag this will change the title of our page to whatever is within it.
+    </p>
 
     <h1 class="subtitle">Text elements</h1>
-    <p class="maintext">&lt;h1&gt;<br>This is a header element
-      <br><br>&lt;p&gt;<br>This is a paragraph element
+    <p class="maintext">
+      &lt;h1&gt;
+      <br>This is a header element
       <br>
+      <br>&lt;p&gt;
+      <br>This is a paragraph element
+      <br>
+      <br>&lt;ul&gt;
+      <br>&nbsp;&nbsp;&lt;ls&gt;stuff&lt;/ls&gt;
+      <br>&lt;/ul&gt;
+      <br>This is a unordered list whatever is within the ls tags will be the list items. To make it into an ordered list simply type ol instead of ul.
+      <br>
+      <br>&lt;strong&gt;Super strong&lt;/strong&gt;
+      <br>This is an inline element you can put it around text that you want to be bold. you can also type in em instead this will make it italic.
+      <br>
+      <br>
+
     </p>
     
 
@@ -78,7 +127,7 @@
     
     <p class="maintext">
       &lt;a&gt;
-      <br>This is a anchor element.This can add a link to text within it. This tag requires a value for href(hyperlinkreference). The value you will give href is the link to where you want it to go. When referencing within a page and not to an external link or internal file you will link it to an id with a # infront of it.
+      <br>This is a anchor element.This can add a link to text within it. This tag requires a value for href(hyperlinkreference). The value you will give href is the link to where you want it to go. When referencing within a page and not to an external link or internal file you will link it to an id with a # infront of it. When linking a image if you want it to be saved to your webpage you must save it to a folder called img than you must save the image with a name that ends in .jpeg .jpg. Than when referencing it you must write the entire path to navigate it to your img directory, and than to the picture itself.
       <br><br>it will look something like this:
     </p>
 
@@ -99,7 +148,8 @@
     <p class="maintext">
       id
       <br> This property can be given to something to allow it to be referenced. You can take the id you give something, and put it into a hypertext reference
-      <br><br>it will look something like This
+      <br>
+      <br>it will look something like This
     </p>
 
     <div class="examplebox">
