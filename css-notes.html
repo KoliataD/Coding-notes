@@ -38,10 +38,19 @@
 
   <div class="textbox">
     <h1 class="subtitle">Creating Css Styling Sheets</h1>
-    <p class="maintext">Creating Css Styling Sheets notes</p>
+    <p class="maintext">
+      Creating a Css stylesheet
+      To create a Css sheet we typically first want to create a directory file called css, and than within that css directory we want to create our css stylesheets we must make sure that they end with .css so that they are read as style sheets. After this we need to link our style sheet to our page.
+    </p>
 
     <h1 class="subtitle">Linking Files</h1>
-    <p class="maintext">Linking Files notes</p>
+    <p class="maintext">
+      &lt;head&gt;
+      <br>&nbsp;&nbsp;&lt;link href="css/(whatever your files name is" rel="stylesheet" type="css/stylesheet"&gt;
+      <br>&lt;/head&gt;
+      <br>This is how you link your stylesheet to whatever webpage you are working on. Href stands for hypertext reference rel stands for relationship, and type tells our shell the type of stylesheet it is.
+    
+    </p>
   </div>
 
   <div class="title">
@@ -50,10 +59,31 @@
   
   <div class="textbox">
     <h1 class="subtitle">Css Terminology</h1>
-    <p class="maintext">Css Terminology notes</p>
+    <p class="maintext">
+      Css stands for Cascading style sheet. Css allows us to add design to our webpages.
+      <br>
+      <br>Declarations
+      <br>A declaration is basically a rule, or a modifier we can add to large sections of similar code. To set declarations in css we use brackets {} this is what they look like. To make brackets into a declaration we simple put a element or a class name with a dot before it infront of it than give it properties set to the values we want them to be. It will look like this h1{color: blue;} or for a class .this-is-a-class{color: red ;} Notice that we don't use an equal sign we use a colon, and afterwards we use a semi-colon. The colon is basically our equal sign, and the semi colon tells us that their are more declarations to be read. when we have a lot of declarations together it is a declaration block.
+    </p>
 
     <h1 class="subtitle">Indentation, and spacing</h1>
-    <p class="maintext">Indentation, and spacing notes</p>
+    <p class="maintext">
+      Comments 
+      <br>to write a comment in css you write /*THIS IS A COMMENT*/ on windows, and mac their are commands to automatically write comments on windows it is ctr + / and on mac it is cmd + /
+      <br>
+      <br>Indentation
+      <br>When you are writing declarations in css your element and your first bracket will be on the same line, and than the following declarations will be indented once. every declaration will start from the beginning. It will look something like This
+    <div class="examplebox">
+      <p class="maintext">
+        .class{
+        <br>&nbsp;&nbsp;color: blue;
+        <br>&nbsp;&nbsp;text-font: sans serif; 
+        <br>}
+      </p>
+    </div>
+    </p>
+
+    <p class="maintext"></p>
   </div>
 
   <div class="title">
@@ -62,13 +92,57 @@
 
   <div class="textbox">
     <h1 class="subtitle">Text Properties, and Values</h1>
-    <p class="maintext">Text Properties, and Values notes</p>
+    <p class="maintext">
+      Color
+      <br>This will change the color of your text
+      <br>
+      <br>Text-align
+      <br>This will change where your text shows up it can be left right or center.
+      <br>
+      <br>font-style
+      <br>This changes the style of font you have like italic or normal.
+      <br>
+      <br>font-family
+      <br>This is a much more specific font because their are lots of fonts the one we are currently using is sans-serif.
+      <br>
+      <br>font-size
+      <br>This changes the size of your text it is typically measured in pixels or px.
+      <br>
+      <br>line-height
+      <br>this will change the distance between your lines of text that you have.
+      <br>
+      <br>font-weight
+      <br>For this you can make it bold or normal. This will change the thickness of your text but not the overall size.
+      <br>width
+      <br>This will change the amount of space that text will take up horizontally this can be in px or percentages.
+      <br>
+      <br>float
+      <br>Changing this property will change where text or images show up on your page
+      <br>
+      <br>media
+      <br>Media is a property that will specify what resolution it works best with it can be low, and high.
+      <br>
+      <br>
+    </p>
 
     <h1 class="subtitle">Background Properties, and Values</h1>
     <p class="maintext">Background Properties, and Values notes</p>
 
     <h1 class="subtitle">Block Properties, and Values</h1>
-    <p class="maintext">Block Properties, and Values notes</p>
+    <p class="maintext">
+      Box properties, and values
+      <br>to make a box we need 3 properties, border, padding, maring, and content. In the middle is your content/text around that is padding, around that is border, and lastly surrounding border is margin.
+      <br>border
+      <br>for the border we must set a px size, a color, and a type the type I usually use is solid.
+      <br>
+      <br>padding
+      <br>this will change the distance your text has to the border you can set a color, and a distance in pixels.
+      <br>
+      <br>margin
+      <br>The margin will change the distance it has to the edge of the page we can change this for the left side right side bottom, and top.
+      <br>
+      <br>
+    </p>
   </div>
 </body>
 </html>
